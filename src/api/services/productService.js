@@ -9,9 +9,20 @@ const getProductsAPI = async () => {
         // Authorization: `Bearer ${token}`,
       },
     });
-
     return response.data;
 }
+
+    // const response = await axios.post(
+    //   'https://your-api.com/api/products',
+    //   data,
+    //   {
+    //     headers: {
+    //       Authorization: `Bearer ${token}`, // Include the token in the header
+    //       'Content-Type': 'application/json'
+    //     }
+    //   }
+    // );
+
 
 const productService = {
     getProductsAPI
